@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="MTdKg6" name="HeadTrackedAmbisonicSceneRotator" projectType="audioplug"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" displaySplashScreen="1"
+              jucerFormatVersion="1">
+  <MAINGROUP id="jQmB73" name="HeadTrackedAmbisonicSceneRotator">
+    <GROUP id="{AA30A74A-9B23-0A52-CE4C-8D4DABFAB497}" name="Supperware">
+      <GROUP id="{87573C5F-E189-3DA0-7C74-387805859F7A}" name="supperware">
+        <GROUP id="{3BE70E1D-4C22-87A8-47B9-D25AAA030FE9}" name="configpanel">
+          <FILE id="GTPfVs" name="configPanel-BasePanel.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/configpanel/configPanel-BasePanel.h"/>
+          <FILE id="tLrxWG" name="configPanel-LookAndFeelRadio.h" compile="0"
+                resource="0" file="../ht-api-juce/supperware/configpanel/configPanel-LookAndFeelRadio.h"/>
+          <FILE id="RsuDDC" name="configPanel-SettingsPanel.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/configpanel/configPanel-SettingsPanel.h"/>
+          <FILE id="A1hCX5" name="configPanel.h" compile="0" resource="0" file="../ht-api-juce/supperware/configpanel/configPanel.h"/>
+        </GROUP>
+        <GROUP id="{0E00AD42-4BA3-6A6C-3291-17779D06CC05}" name="headpanel">
+          <GROUP id="{18B6D9E7-B095-87EA-6C36-907E49104D97}" name="generators">
+            <FILE id="CEzi9B" name="generateHeadPoints.py" compile="0" resource="1"
+                  file="../ht-api-juce/supperware/headpanel/generators/generateHeadPoints.py"/>
+            <FILE id="H6zHJg" name="mini_tile.png" compile="0" resource="1" file="../ht-api-juce/supperware/headpanel/generators/mini_tile.png"/>
+          </GROUP>
+          <FILE id="hMb5Fl" name="headpanel-BinaryData.cpp" compile="1" resource="0"
+                file="../ht-api-juce/supperware/headpanel/headpanel-BinaryData.cpp"/>
+          <FILE id="VTUnnI" name="headpanel-BinaryData.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/headpanel/headpanel-BinaryData.h"/>
+          <FILE id="ox8mJR" name="headpanel-Component.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/headpanel/headpanel-Component.h"/>
+          <FILE id="mdjElF" name="headpanel-HeadButton.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/headpanel/headpanel-HeadButton.h"/>
+          <FILE id="q2IyuV" name="headpanel-Plotter.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/headpanel/headpanel-Plotter.h"/>
+          <FILE id="HYjjSK" name="headpanel-PointList.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/headpanel/headpanel-PointList.h"/>
+          <FILE id="ydOsXD" name="headpanel-Points.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/headpanel/headpanel-Points.h"/>
+          <FILE id="ufGUp7" name="headPanel.h" compile="0" resource="0" file="../ht-api-juce/supperware/headpanel/headPanel.h"/>
+        </GROUP>
+        <GROUP id="{134723EF-42C0-1FF5-DF4C-46E4BB8015C2}" name="midi">
+          <FILE id="We0oqp" name="midi-MidiDuplex.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/midi/midi-MidiDuplex.h"/>
+          <FILE id="Fx0diI" name="midi-TrackerDriver.h" compile="0" resource="0"
+                file="../ht-api-juce/supperware/midi/midi-TrackerDriver.h"/>
+          <FILE id="lwvSwO" name="midi.h" compile="0" resource="0" file="../ht-api-juce/supperware/midi/midi.h"/>
+        </GROUP>
+        <FILE id="fn4FDJ" name="HeadMatrix.h" compile="0" resource="0" file="../ht-api-juce/supperware/HeadMatrix.h"/>
+        <FILE id="oftFCf" name="LICENSE" compile="0" resource="1" file="../ht-api-juce/supperware/LICENSE"/>
+        <FILE id="NrTKaE" name="Tracker.h" compile="0" resource="0" file="../ht-api-juce/supperware/Tracker.h"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{65ABB0C1-D0DA-76CB-CC57-7ABED9D2B97E}" name="Source">
+      <FILE id="LphdxO" name="AmbisonicRotation.h" compile="0" resource="0"
+            file="Source/AmbisonicRotation.h"/>
+      <FILE id="UuPTQU" name="AmbisonicRotation.cpp" compile="1" resource="0"
+            file="Source/AmbisonicRotation.cpp"/>
+      <FILE id="UZCa8X" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="p1AgBN" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="WI4MWK" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="cFIME4" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="HeadTrackedAmbisonicSceneRotator"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="HeadTrackedAmbisonicSceneRotator"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_osc" path="../../../../neural/pluginframework/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../neural/pluginframework/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
